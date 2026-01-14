@@ -6,9 +6,10 @@ function exportJSON() {
 
     for (const [key, value] of formData.entries()) {
         if (value.trim() === "") continue;   // skip empty fields
-        json[key] = value;
+        (value !== 'on' && value !== "off") ? json[key] = value : (value === 'on') ? json[key] = 1 : json[key] = 0;
     }
 
+    document.getElementById('output').style.visibility = 'visible';
     document.getElementById("output").textContent =
         JSON.stringify(json, null, 2);
 }

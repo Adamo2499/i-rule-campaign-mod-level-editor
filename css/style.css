@@ -55,3 +55,7 @@ pre {
     margin-top: 20px;
     overflow: auto;
 }
+
+#output {
+    visibility: hidden;
+}

@@ -11,10 +11,26 @@
 
 <form id="editor">
     <label for="levelName">Level name:</label>
-    <input type="text" name="levelName" id="levelName" placeholder="Unnamed Level">
+    <input type="text" name="levelName" id="levelName" placeholder="Unnamed Level" title="Test tooltip">
 
     <label for="levelDescription">Level description:</label>
     <input type="text" name="levelDescription" id="levelDescription" placeholder="Level description">
+
+    <label for="levelHeartFallSpeed">Hearts falling speed multiplayer:</label>
+    <input type="number" name="levelHeartFallSpeed" id="levelHeartFallSpeed" value="1" min="0">
+
+    <label for="levelHeartValue">Hearts value:</label>
+    <input type="number" name="levelHeartValue" id="levelHeartValue" value="50" min="0">
+
+    <label for="levelHeartSize">Hearts size multiplayer:</label>
+    <input type="number" name="levelHeartSize" id="levelHeartSize" value="1" min="0">
+
+    <label for="levelHeartTimer">Hearts falling starting timer: </label>
+    <input type="number" name="levelHeartTimer" id="levelHeartTimer" value="0" min="0" max="560">
+
+    <label for="levelDrawWaveBorder">Draw wave border</label>
+    <input type="checkbox" name="levelDrawWaveBorder" id="levelDrawWaveBorder">
+
 </form>
 
 <button onclick="exportJSON()">Export JSON</button>
