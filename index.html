@@ -16,6 +16,12 @@
     <label for="levelDescription">Level description:</label>
     <input type="text" name="levelDescription" id="levelDescription" placeholder="Level description">
 
+    <label for="levelNameColor">Level name text color:</label>
+    <input type="color" name="levelNameColor" id="levelNameColor">
+
+    <label for="levelDescriptionColor">Level description text color:</label>
+    <input type="color" name="levelDescriptionColor" id="levelDescriptionColor">
+
     <label for="levelHeartFallSpeed">Hearts falling speed multiplayer:</label>
     <input type="number" name="levelHeartFallSpeed" id="levelHeartFallSpeed" value="1" min="0">
 
@@ -28,8 +34,56 @@
     <label for="levelHeartTimer">Hearts falling starting timer: </label>
     <input type="number" name="levelHeartTimer" id="levelHeartTimer" value="0" min="0" max="560">
 
-    <label for="levelDrawWaveBorder">Draw wave border</label>
+    <label for="levelStartingHearts">Starting hearts: </label>
+    <input type="number" name="levelStartingHearts" id="levelStartingHearts" value="50">
+
+    <label for="levelHeartsCap">Level's heart cap: </label>
+    <input type="number" name="levelHeartsCap" id="levelHeartsCap" value="9999">
+
+    <label for="levelWaveAmount">Total amount of waves in the level: </label>
+    <input type="number" name="levelWaveAmount" id="levelWaveAmount" value="10">
+
+    <!--  levelBigWaves  -->
+
+    <!--  TODO: if levelDrawWaveBar isn't checked, uncheck levelDarWaveBorder and levelDrawFlags  -->
+    <label for="levelDrawWaveBar">Draw wavebar</label>
+    <input type="checkbox" name="levelDrawWaveBar" id="levelDrawWaveBar" checked>
+
+
+    <label for="levelDrawWaveBorder">Draw wavebar border</label>
     <input type="checkbox" name="levelDrawWaveBorder" id="levelDrawWaveBorder">
+
+    <label for="levelDrawFlags">Draw flags on wavebar</label>
+    <input type="checkbox" name="levelDrawFlags" id="levelDrawFlags" checked>
+
+    <label for="levelTimerSpeed">Level's timer speed multiplayer</label>
+    <input type="number" name="levelTimerSpeed" id="levelTimerSpeed" value="0.5" min="0">
+
+    <label for="levelSpawnDelay">Level's timer initial value</label>
+    <input type="number" name="levelSpawnDelay" id="levelSpawnDelay" value="-115">
+
+    <span>Set condition for timer's alt speed</span>
+    <label for="levelTimerSpeedAltConditionForLessEnemies">Set alt speed for less enemies</label>
+    <input type="radio" name="levelTimerSpeedAltCondition" id="levelTimerSpeedAltConditionForLessEnemies">
+    <label for="levelTimerSpeedAltConditionForMoreEnemies">Set alt speed for more enemies</label>
+    <input type="radio" name="levelTimerSpeedAltCondition" id="levelTimerSpeedAltConditionForMoreEnemies">
+
+    <label for="levelBackground">Level's background:</label>
+    <select name="levelBackground" id="levelBackground">
+        <option value="lvl1">Room 1</option>
+        <option value="lvl2">Room 2</option>
+        <option value="lvl3">Room 3</option>
+        <option value="megaPlum">Mega Plum's boss room</option>
+        <option value="ragdoll">Rag Doll's boss room</option>
+        <option value="middleHorn">Middle Horn's boss room</option>
+    </select>
+
+    <label for="levelHiddenUntilUnlocked">Level is hidden until unlock</label>
+    <input type="checkbox" name="levelHiddenUntilUnlocked" id="levelHiddenUntilUnlocked">
+
+    <label for="levelBobsBrainNoSound">Don't play Bob's Brain sound</label>
+    <input type="checkbox" name="levelBobsBrainNoSound" id="levelBobsBrainNoSound">
+
 
 </form>
 
