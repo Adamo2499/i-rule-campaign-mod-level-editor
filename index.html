@@ -1,11 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>I.RULE Campaign Mod Level Editor</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+<h2>I.RULE Campaign Mod Level Editor</h2>
+
+<form id="editor">
+    <label for="levelName">Level name:</label>
+    <input type="text" name="levelName" id="levelName" placeholder="Unnamed Level">
+
+    <label for="levelDescription">Level description:</label>
+    <input type="text" name="levelDescription" id="levelDescription" placeholder="Level description">
+</form>
+
+<button onclick="exportJSON()">Export JSON</button>
+<pre id="output"></pre>
+
+<script src="js/index.js"></script>
 </body>
 </html>
